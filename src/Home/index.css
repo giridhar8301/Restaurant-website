@@ -1,0 +1,83 @@
+/* General Styles */
+.home-background {
+  background-color: #f9f9f9;
+  padding: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tab Menu */
+.tab-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style-type: none;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.each-tab-item {
+  cursor: pointer;
+}
+
+.tab-category-button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.active-tab-item .tab-category-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.tab-category-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Dishes List */
+.dishes-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Spinner */
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-background {
+    padding: 12px;
+  }
+
+  .tab-category-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .tab-container {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 576px) {
+  .dishes-list-container {
+    gap: 12px;
+  }
+
+  .tab-category-button {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}
